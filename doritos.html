@@ -4,15 +4,66 @@
     <head>
         <title>Doritos | ALERGI</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?				family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        
+        <style>
+       * {
+    	box-sizing: border-box;
+
+		}
+
+		body{
+      	margin: 0;
+   		padding: 0;
+    	font-family: 'Open Sans', sans-serif;
+		}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color: #333;
+}
+
+ul p{
+  margin-top: 20;
+  color: black;
+  padding: 0;
+  float: left;
+  
+}
+
+        </style>
     </head>
 
     <body>
-        <div class="navbar">
-            <p>A L E R G I</p>
-            <div class="navlinks">
-                <a href="javascript:history.back()">Go Back</a>
-            </div>
-        </div>
+        <ul>
+        <p>A L E R G I</p>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 
         <div class="doritos">
             <div class="img">
