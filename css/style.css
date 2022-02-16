@@ -1,66 +1,92 @@
+*{
+    box-sizing: border-box ;
+}
 
-* {
-    box-sizing: border-box;
-
-    }
-
-    body{
-      margin: 0;
-       padding: 0;
+body {
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
-    }
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+/*NAV BAR*/
 
 ul {
-list-style-type: none;
-margin: 0;
-padding: 0px;
-overflow: hidden;
-border: black;
-background-color: #333
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
-li {
-float: left;
-}
-
-ul p{
+ul p {
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
     margin-right: 20px;
-    margin-top: 30px;
     font-size: 30px;
+
+}
+  
+li {
+    float: left;
+    border-right:1px solid black;
+    border-left:1px solid black;
 }
 
 li a {
-display: block;
-color: rgb(255, 255, 255);
-text-align: center;
-text-decoration: none;
-transition: 0.3s;
-margin: 0;
-padding: 30px;
-font-size: 31px;
-height: 10px 10px;
-padding-bottom: 40px;
-padding-top: 40px;
-}
-
-li {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
     margin: 0;
+    margin-top: 18px;
+    font-size: 25px;
 }
-
-/* Change the link color to #111 (black) on hover */
+  
 li a:hover {
-background-color: rgb(34, 34, 34);
+    color: rgb(105, 105, 105);
 }
 
-ul p{
-margin-top: 20;
-color: rgb(255, 255, 255);
-padding: 1;
-float: left;
+/*IMAGE AND INGREDIENTS*/
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* Image */
 
-.img {
-    width: 700px;
+img {
+    max-width: 100%;
+    width: 3500px;
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.image {
+    flex-basis: 70%;
+    order: 2;
+}
+
+.text {
+    color: #000000;
+    padding-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: smaller;
+}
+
+.text strong{
+    font-size: 70px;
+    border: 1px solid black;
+    background: yellow;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
